@@ -12,7 +12,7 @@ class Circle {
     this.maxRadius = random(10, 20);
     this.distance = 5;
     this.growthSpeed = random(0.5, 1.5);
-    this.distanceIncrement = random(0.5, 1.5);
+    this.distanceIncrement = random(1.5, 2);
     this.rotationSpeed = random(0.01, 0.02);
     this.alpha = 255;
     this.fadeSpeed = random(0.5, 2);
