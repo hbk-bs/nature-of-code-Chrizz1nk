@@ -1,14 +1,14 @@
 // Variablen für die Kreise
 let circles = [];
 let maxCircles = 1000;
-let addCircleRate = 1.5; // Geschwindigkeit, mit der neue Kreise hinzugefügt werden
-let frameCounter = 1;
+let addCircleRate = 5; // Geschwindigkeit, mit der neue Kreise hinzugefügt werden
+let frameCounter = 2;
 
 // Klasse für die Kreise
 class Circle {
   constructor(angleOffset) {
     this.angle = angleOffset || 0;
-    this.radius = 5;
+    this.radius = 10;
     this.maxRadius = random(10, 20);
     this.distance = 5;
     this.growthSpeed = random(0.5, 1.5);
@@ -60,7 +60,7 @@ class Circle {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  colorMode(RGB, 255);
+  colorMode(HSB, 255, 200, 100, 30);
   background(0);
 }
 
