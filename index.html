@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Willkommen auf meiner Website</title>
+    <title>Sonnenblumen-Wachstum</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -19,8 +19,8 @@
             padding: 20px;
         }
         header {
-            background-color: #2c3e50;
-            color: white;
+            background-color: #f9a825;
+            color: #442c2e;
             padding: 40px 0;
             text-align: center;
         }
@@ -37,8 +37,8 @@
         }
         .button {
             display: inline-block;
-            background-color: #3498db;
-            color: white;
+            background-color: #f9a825;
+            color: #442c2e;
             padding: 12px 24px;
             text-decoration: none;
             border-radius: 4px;
@@ -47,7 +47,7 @@
             transition: background-color 0.3s;
         }
         .button:hover {
-            background-color: #2980b9;
+            background-color: #f57f17;
         }
         footer {
             text-align: center;
@@ -56,30 +56,97 @@
             color: #7f8c8d;
             font-size: 0.9em;
         }
+        .growth-stages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        .stage {
+            width: 30%;
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 15px;
+            background-color: #fff9e6;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .stage img {
+            max-width: 100%;
+            border-radius: 4px;
+            border: 2px solid #f9a825;
+        }
+        .stage h3 {
+            color: #442c2e;
+            margin-top: 15px;
+        }
+        .stage p {
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .stage {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Willkommen auf meiner Website</h1>
-            <p>Eine einfache Startseite, die zu meinem Hauptprojekt führt</p>
+            <h1>Nature Of Code</h1>
+            <p>Diese Seite erklärt, wie der Code zu stande gekommen ist</p>
         </div>
     </header>
 
     <div class="container">
         <div class="main-content">
-            <h2>Über mein Projekt</h2>
-            <p>Dies ist die Startseite für mein Webprojekt. Hier finden Sie eine kurze Übersicht und können zum Hauptprojekt navigieren.</p>
+            <h2>Das Wachstum der Sonnenblume</h2>
+            <p>Mein Nature of Code Projekt dreht sich um den Wachstum einer Sonnenblume. Ich habe 
+                festgestellt, dass die Sonnenblume in einer Spirale wächst und habe
+                dies versucht, als Code dazustellen. Hier werde ich Beobachtungen in Bilderform zeigen,
+            die meinem Code geholfen haben.</p>
             
-            <h2>Funktionen</h2>
-            <ul>
-                <li>HTML, JavaScript und Markdown Integration</li>
-                <li>Responsives Design</li>
-                <li>Einfache Navigation</li>
-                <li>Moderne Benutzeroberfläche</li>
-            </ul>
+            <div class="growth-stages">
+                <div class="stage">
+                    <img src="/api/placeholder/320/240" alt="Samen und Keimung">
+                    <h3>Samen und Keimung</h3>
+                    <p>Im ersten Stadium keimt der Samen und entwickelt seine ersten Wurzeln und Keimblätter.</p>
+                </div>
+                
+                <div class="stage">
+                    <img src="/api/placeholder/320/240" alt="Jungpflanze">
+                    <h3>Jungpflanze</h3>
+                    <p>Die junge Sonnenblume entwickelt erste echte Blätter und beginnt zu wachsen.</p>
+                </div>
+                
+                <div class="stage">
+                    <img src="/api/placeholder/320/240" alt="Wachstumsphase">
+                    <h3>Wachstumsphase</h3>
+                    <p>Die Pflanze wird größer und robuster, der Stängel verstärkt sich.</p>
+                </div>
+                
+                <div class="stage">
+                    <img src="/api/placeholder/320/240" alt="Knospenbildung">
+                    <h3>Knospenbildung</h3>
+                    <p>Die Blütenknospe bildet sich am oberen Ende des Stängels.</p>
+                </div>
+                
+                <div class="stage">
+                    <img src="/api/placeholder/320/240" alt="Blüte">
+                    <h3>Blüte</h3>
+                    <p>Die charakteristische gelbe Blüte öffnet sich und wendet sich der Sonne zu.</p>
+                </div>
+                
+                <div class="stage">
+                    <img src="/api/placeholder/320/240" alt="Samenreife">
+                    <h3>Samenreife</h3>
+                    <p>Die Blüte verwandelt sich in einen Samenkopf mit vielen nahrhaften Sonnenblumenkernen.</p>
+                </div>
+            </div>
             
-            <p>Klicken Sie auf den Button unten, um zum Hauptprojekt zu gelangen:</p>
+            <h2>Mehr erfahren</h2>
+            <p>Klicken Sie auf den Button unten, um zu unserem Hauptprojekt zu gelangen und mehr über Sonnenblumen zu erfahren:</p>
             
             <!-- Hier den Link zur bestehenden Webseite anpassen -->
             <a href="hauptprojekt.html" class="button">Zum Hauptprojekt</a>
@@ -88,7 +155,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Mein Webprojekt. Alle Rechte vorbehalten.</p>
+            <p>&copy; 2025 Sonnenblumen-Projekt. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 </body>
